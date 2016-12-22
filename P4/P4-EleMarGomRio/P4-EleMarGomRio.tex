@@ -275,6 +275,8 @@ Como se puede observar mirando la columna correspondiente al ratio de transferen
 \subsection{¿Qué es Scala? Instale Gatling y pruebe los escenarios por defecto.}
 
 
+
+
 %----------------------------------------------------------------------------------------
 %	Cuestión 4
 %----------------------------------------------------------------------------------------
@@ -283,6 +285,96 @@ Como se puede observar mirando la columna correspondiente al ratio de transferen
 
 \subsection{Instale y siga el tutorial en http://jmeter.apache.org/usermanual/build-web-test-plan.html \cite{ejer4} realizando capturas de pantalla y comentándolas. En vez de usar la web de jmeter, haga el experimento usando sus máquinas virtuales ¿coincide con los resultados de ab?}
 
+Para instalar JMeter nos descargamos el binario .zip de la página oficial, lo descomprimimos y ejecutamos el script \texttt{apache-jmeter-3.1/bin/jmeter}.\\
+
+Lo primero que tenemos que hacer es crear un grupo de hilos, como se muestra en la figura \ref{fig:ejercicio4_1} y nos saldrá algo parecido a la figura \ref{fig:ejercicio4_2} con los valores por defecto. Cambiamos los valores del número de hilos a 5, y contador del bucle a 2, tal y como se muestra en la figura \ref{fig:ejercicio4_3}.\\
+
+Ahora añadimos los valores de las peticiones HTTP por defecto, para ello debemos entrar tal y como se muestra en la figura \ref{fig:ejercicio4_4}, una vez añadidos se mostrará algo similar a la figura \ref{fig:ejercicio4_5} teniendo en cuenta que hemos puesto la ip de nuestra máquina virtual de Ubuntu Server. También podemos añadir un gestor de Cookies de HTTP, como se muestra en la figura \ref{fig:ejercicio4_6}.\\
+
+A continuación añadimos las peticiones HTTP para nuestro test, como se muestra en la figura \ref{fig:ejercicio4_7} con los valores que se muestran en la figura \ref{fig:ejercicio4_8}.\\
+
+Finalmente añadimos una gráfica para ver los resultados de los test creados tal y como se muestra en la figura \ref{fig:ejercicio4_9} y seleccionamos el fichero de salida de JMeter (figura \ref{fig:ejercicio4_10}). Ejecutando el test de JMeter varias veces hacia Ubuntu Server se obtiene la siguiente gráfica (\ref{fig:ejercicio4_11}). Hacemos lo mismo para Windows (figura \ref{fig:ejercicio4_12}) y CentOS (figura \ref{fig:ejercicio4_13}), cambiando la ip en los valores por defecto de las peticiones de HTTP. Para que las gráficas fuesen significativas he cambiado el número de bucles de 2 a 200.\\
+
+Como se puede observar en las gráficas el rendimiento en Ubuntu es 33.5/minuto, en Windows 35,84/minuto y en CentOS 41.039/minuto.
+
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_1.png} 	
+	\caption{CentOS, JMeter - crear grupo de hilos.} \label{fig:ejercicio4_1}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_2.png} 	
+	\caption{CentOS, JMeter - grupo de hilos por defecto.} \label{fig:ejercicio4_2}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_3.png} 	
+	\caption{CentOS, JMeter - grupo de hilos.} \label{fig:ejercicio4_3}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_4.png} 	
+	\caption{CentOS, JMeter - añadir valores de las peticiones HTTP por defecto.} \label{fig:ejercicio4_4}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_5.png} 	
+	\caption{CentOS, JMeter - valores de las peticiones HTTP por defecto.} \label{fig:ejercicio4_5}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_6.png} 	
+	\caption{CentOS, JMeter - gestor de Cookies de HTTP.} \label{fig:ejercicio4_6}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_7.png} 	
+	\caption{CentOS, JMeter - añadir peticiones HTTP.} \label{fig:ejercicio4_7}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_8.png} 	
+	\caption{CentOS, JMeter - peticiones HTTP.} \label{fig:ejercicio4_8}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_9.png} 	
+	\caption{CentOS, JMeter - añadir gráfico.} \label{fig:ejercicio4_9}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_10.png} 	
+	\caption{CentOS, JMeter - gráfico de resultados.} \label{fig:ejercicio4_10}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_11.png} 	
+	\caption{CentOS, JMeter - gráfico de resultados hacia Ubuntu Server.} \label{fig:ejercicio4_11}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_12.png} 	
+	\caption{CentOS, JMeter - gráfico de resultados hacia Windows.} \label{fig:ejercicio4_12}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio4_13.png} 	
+	\caption{CentOS, JMeter - gráfico de resultados hacia CentOS.} \label{fig:ejercicio4_13}
+\end{figure}
 
 
 
@@ -300,7 +392,9 @@ Como se puede observar mirando la columna correspondiente al ratio de transferen
 	\item \textbf{Ejemplo de uso analizando los resultados.}
 \end{enumerate}
 
-\textbf{Tenga en cuenta que puede comparar varios gestores de BD, lenguajes de programación web (tiempos de ejecución, gestión de memoria, ...), duración de la batería, servidor DNS, etc. . Alternativamente, puede descargar alguno de algún repositorio en github y modificarlo según sus necesidades.}
+\textbf{Tenga en cuenta que puede comparar varios gestores de BD, lenguajes de programación web (tiempos de ejecución, gestión de memoria, ...), duración de la batería, servidor DNS, etc. . Alternativamente, puede descargar alguno de algún repositorio en github y modificarlo según sus necesidades.}\\
+
+Voy a utilizar como base un ejercicio que realizamos en la asignatura de Arquitectura de Computadores el cual calcula el tiempo de ejecutar n operaciones en coma flotante de forma secuencial.
 
 
 
