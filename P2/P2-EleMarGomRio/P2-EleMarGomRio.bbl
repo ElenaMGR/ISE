@@ -1,0 +1,91 @@
+\begin{thebibliography}{10}
+
+\bibitem{ufw}
+\url{https://help.ubuntu.com/community/UFW}, consultado el 14 de Noviembre de
+  2016.
+\newblock Uncomplicated firewall.
+
+\bibitem{aptRepository}
+\url{http://www.guia-ubuntu.com/index.php/A%C3%B1adir_repositorios_externos},
+  consultado el 14 de Noviembre de 2016.
+\newblock Añadir nuevo repositorio con apt.
+
+\bibitem{yum}
+\url{https://www.centos.org/docs/5/html/5.1/Deployment_Guide/s1-yum-useful-commands.html},
+  consultado el 2 de Noviembre de 2016.
+\newblock Comando yum.
+
+\bibitem{screen}
+\url{http://elblogdepicodev.blogspot.com.es/2013/01/dejar-procesos-vivos-de-conexion-ssh.html},
+  consultado el 23 de Noviembre de 2016.
+\newblock screen.
+
+\bibitem{tmux}
+\url{http://linoxide.com/how-tos/install-tmux-manage-multiple-linux-terminals/},
+  consultado el 23 de Noviembre de 2016.
+\newblock tmux.
+
+\bibitem{sshX}
+\url{http://man.openbsd.org/ssh}, consultado el 23 de Noviembre de 2016.
+\newblock Opción -X de SSH.
+
+\bibitem{sshPass}
+\url{https://help.ubuntu.com/lts/serverguide/openssh-server.html}, consultado
+  el 23 de Noviembre de 2016.
+\newblock openssh-server.
+
+\bibitem{LAMPCentOS}
+\url{https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7#step-four-—-test-php-processing-on-your-web-server},
+  consultado el 23 de Noviembre de 2016.
+\newblock Instalación de LAMP en CentOS.
+
+\bibitem{fail2ban}
+\url{https://www.howtoforge.com/tutorial/how-to-install-fail2ban-on-centos/},
+  consultado el 23 de Noviembre de 2016.
+\newblock Instalación y configuración de fail2ban.
+
+\bibitem{awk}
+\url{https://www.tutorialspoint.com/awk/awk_basic_examples.htm}, consultado el
+  23 de Noviembre de 2016.
+\newblock Ejemplos de awk.
+
+\bibitem{LAMP}
+\url{http://ubuntuserverguide.com/2014/06/how-to-install-lamp-in-ubuntu-server-14-04-lts.html},
+  consultado el 23 de Noviembre de 2016.
+\newblock Instalación de LAMP.
+
+\bibitem{sshConfig}
+\url{http://www.linux-party.com/index.php/35-linux/8988-desactivar-ssh-root-login-en-sistemas-linux},
+  consultado el 23 de Noviembre de 2016.
+\newblock openssh-server configuración.
+
+\bibitem{patch}
+\url{http://www.thegeekstuff.com/2014/12/patch-command-examples/}, consultado
+  el 23 de Noviembre de 2016.
+\newblock Ejemplo de patch.
+
+\bibitem{webmin}
+\url{http://www.webmin.com/rpm.html}, consultado el 23 de Noviembre de 2016.
+\newblock Instalación de webmin.
+
+\bibitem{aptProxy}
+\url{https://help.ubuntu.com/community/AptGet/Howto}, consultado el 9 de
+  Noviembre de 2016.
+\newblock Configurar apt con proxy.
+
+\bibitem{yumRepository}
+\url{https://www.centos.org/docs/5/html/yum/sn-using-repositories.html},
+  consultado el 9 de Noviembre de 2016.
+\newblock Añadir nuevo repositorio en CentOS.
+
+\bibitem{yumProxy}
+\url{https://www.centos.org/docs/5/html/yum/sn-yum-proxy-server.html},
+  consultado el 9 de Noviembre de 2016.
+\newblock Yum con un Proxy Server.
+
+\bibitem{apt}
+\url{http://www.ubuntu-guia.com/2011/01/comando-apt-get-en-ubuntu.html},
+  consultado el 9 de Noviembre de 2016.
+\newblock Comando apt.
+
+\end{thebibliography}

@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Cuesti\363n 1:}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{a\) \277Seleccione, instale y ejecute uno, comente los resultados. Atenci\363n: no es lo mismo un benchmark que una suite, instale un benchmark.}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Cuesti\363n 2:}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{De los par\341metros que le podemos pasar al comando \277Qu\351 significa -c 5? \277y -n 100? Monitorice la ejecuci\363n de ab contra alguna m\341quina \(cualquiera\) \277cu\341ntas ``tareas'' crea ab en el cliente?}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Cuesti\363n 3:}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Ejecute ab contra a las tres m\341quinas virtuales \(desde el SO anfitri\363n a las m\341quina virtuales de la red local\) una a una \(arrancadas por separado\).\277Cu\341l es la que proporciona mejores resultados? Muestre y com\351ntelos. \(Use como m\341quina de referencia Ubuntu Server para la comparativa\).}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Cuesti\363n opcional 1:}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{\277Qu\351 es Scala? Instale Gatling y pruebe los escenarios por defecto.}{section.4}% 8
+\BOOKMARK [1][-]{section.5}{Cuesti\363n 4:}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Instale y siga el tutorial en http://jmeter.apache.org/usermanual/build-web-test-plan.html ejer4 realizando capturas de pantalla y coment\341ndolas. En vez de usar la web de jmeter, haga el experimento usando sus m\341quinas virtuales \277coincide con los resultados de ab?}{section.5}% 10
+\BOOKMARK [1][-]{section.6}{Cuesti\363n 5:}{}% 11
+\BOOKMARK [2][-]{subsection.6.1}{Programe un benchmark usando el lenguaje que desee. El benchmark debe incluir:}{section.6}% 12

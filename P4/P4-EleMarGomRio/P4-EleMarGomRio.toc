@@ -1,0 +1,13 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Cuesti\IeC {\'o}n 1:}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}a) \IeC {\textquestiondown }Seleccione, instale y ejecute uno, comente los resultados. Atenci\IeC {\'o}n: no es lo mismo un benchmark que una suite, instale un benchmark.}{4}{subsection.1.1}
+\contentsline {section}{\numberline {2}Cuesti\IeC {\'o}n 2:}{13}{section.2}
+\contentsline {subsection}{\numberline {2.1}De los par\IeC {\'a}metros que le podemos pasar al comando \IeC {\textquestiondown }Qu\IeC {\'e} significa -c 5? \IeC {\textquestiondown }y -n 100? Monitorice la ejecuci\IeC {\'o}n de ab contra alguna m\IeC {\'a}quina (cualquiera) \IeC {\textquestiondown }cu\IeC {\'a}ntas ``tareas'' crea ab en el cliente?}{13}{subsection.2.1}
+\contentsline {section}{\numberline {3}Cuesti\IeC {\'o}n 3:}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Ejecute ab contra a las tres m\IeC {\'a}quinas virtuales (desde el SO anfitri\IeC {\'o}n a las m\IeC {\'a}quina virtuales de la red local) una a una (arrancadas por separado).\IeC {\textquestiondown }Cu\IeC {\'a}l es la que proporciona mejores resultados? Muestre y com\IeC {\'e}ntelos. (Use como m\IeC {\'a}quina de referencia Ubuntu Server para la comparativa).}{13}{subsection.3.1}
+\contentsline {section}{\numberline {4}Cuesti\IeC {\'o}n opcional 1:}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}\IeC {\textquestiondown }Qu\IeC {\'e} es Scala? Instale Gatling y pruebe los escenarios por defecto.}{13}{subsection.4.1}
+\contentsline {section}{\numberline {5}Cuesti\IeC {\'o}n 4:}{13}{section.5}
+\contentsline {subsection}{\numberline {5.1}Instale y siga el tutorial en http://jmeter.apache.org/usermanual/build-web-test-plan.html \cite {ejer4} realizando capturas de pantalla y coment\IeC {\'a}ndolas. En vez de usar la web de jmeter, haga el experimento usando sus m\IeC {\'a}quinas virtuales \IeC {\textquestiondown }coincide con los resultados de ab?}{13}{subsection.5.1}
+\contentsline {section}{\numberline {6}Cuesti\IeC {\'o}n 5:}{13}{section.6}
+\contentsline {subsection}{\numberline {6.1}Programe un benchmark usando el lenguaje que desee. El benchmark debe incluir:}{13}{subsection.6.1}

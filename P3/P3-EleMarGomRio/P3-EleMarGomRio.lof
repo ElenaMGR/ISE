@@ -1,0 +1,36 @@
+\select@language {spanish}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces CentOS, crear script para crontab.}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces CentOS, comprobaci\IeC {\'o}n del correcto funcionamiento de cron.}}{6}{figure.2.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ubuntu, comando dmesg.}}{7}{figure.3.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Windows, monitor de rendimiento, informe.}}{8}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Windows, monitor de rendimiento, estad\IeC {\'\i }sticas I.}}{9}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Windows, monitor de rendimiento, estad\IeC {\'\i }sticas II}}{9}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Windows, monitor de rendimiento, memoria.}}{10}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Windows, monitor de rendimiento, sistema.}}{10}{figure.4.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Windows, crear recopilador de datos I.}}{11}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Windows, crear recopilador de datos II.}}{12}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Windows, crear recopilador de datos III.}}{12}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Windows, crear recopilador de datos IV.}}{13}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Windows, crear recopilador de datos V.}}{13}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Windows, crear recopilador de datos VI.}}{14}{figure.5.6}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Demo munin, monitorizaci\IeC {\'o}n de las CPUs.}}{15}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Demo munin, monitorizaci\IeC {\'o}n de la cach\IeC {\'e}.}}{16}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Demo munin, monitorizaci\IeC {\'o}n de la red.}}{16}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Demo munin, monitorizaci\IeC {\'o}n del uso de la CPU.}}{17}{figure.6.4}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces CentOS, instalaci\IeC {\'o}n de zabbix.}}{18}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces CentOS, configuraci\IeC {\'o}n de zabbix.}}{18}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces CentOS, zabbix.}}{19}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces CentOS, zabbix.}}{19}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces CentOS, zabbix.}}{20}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces CentOS, zabbix.}}{20}{figure.7.6}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces CentOS, c\IeC {\'o}digo en python.}}{22}{figure.9.1}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces CentOS, profiling de un script en pyhton.}}{22}{figure.9.2}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces CentOS, profiling MySQL.}}{23}{figure.10.1}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces CentOS, profiling MySQL.}}{24}{figure.10.2}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces CentOS, profiling MySQL.}}{24}{figure.10.3}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces CentOS, profiling MySQL.}}{25}{figure.10.4}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Ubuntu, instalaci\IeC {\'o}n y ejecuci\IeC {\'o}n de hddtemp.}}{26}{figure.11.1}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Ubuntu, instalaci\IeC {\'o}n de lm-sensor con GUI xsensor.}}{26}{figure.11.2}
+\contentsline {figure}{\numberline {11.3}{\ignorespaces Ubuntu, xsensor, temperatura general.}}{27}{figure.11.3}
+\contentsline {figure}{\numberline {11.4}{\ignorespaces Ubuntu, xsensor, asus.}}{27}{figure.11.4}
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Ubuntu, xsensor, procesador.}}{28}{figure.11.5}

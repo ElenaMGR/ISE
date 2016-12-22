@@ -1,0 +1,25 @@
+     
+@misc{logApt,
+	note = "Historial de actualizaciones con apt.",
+	title = "\url{http://geekland.eu/historial-de-actualizaciones-con-apt-get-y-dpkg/}",
+	year = "consultado el 5 de Diciembre de 2016",
+}
+
+@misc{zabbix,
+	note = "Instalación de ZABBIX.",
+	title = "\url{https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/server_installation_with_mysql}",
+	year = "consultado el 8 de Diciembre de 2016",
+}
+
+@misc{straceArticulo,
+	note = "Artículo donde se muestra el uso de strace",
+	title = "\url{http://chadfowler.com/2014/01/26/the-magic-of-strace.html}",
+	year = "consultado el 8 de Diciembre de 2016",
+}
+
+
+@misc{pythonProfiler,
+	note = "Python profiler",
+	title = "\url{https://docs.python.org/2/library/profile.html}",
+	year = "consultado el 8 de Diciembre de 2016",
+}

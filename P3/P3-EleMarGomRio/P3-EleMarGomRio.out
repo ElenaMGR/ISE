@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Cuesti\363n 1:}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{a\) \277Qu\351 archivo le permite ver qu\351 programas se han instalado con el gestor de paquetes?}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{b\) \277Qu\351 significan las terminaciones .1.gz o .2.gz de los archivos en ese directorio?}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Cuesti\363n 2:}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{\277qu\351 archivo ha de modificar para programar una tarea? Escriba la l\355nea necesaria para ejecutar una vez al d\355a una copia del directorio /codigo a /seguridad/\044fecha donde \044fecha es la fecha actual \(puede usar el comando date\).}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Cuesti\363n 3:}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Pruebe a ejecutar el comando, conectar un dispositivo USB y vuelva a ejecutar el comando. Copie y pegue la salida del comando. \(considere usar dmesg | tail\). Comente qu\351 observa en la informaci\363n mostrada.}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Cuesti\363n 4:}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Ejecute el monitor de ``System Performance'' y muestre el resultado. Incluya capturas de pantalla comentando la informaci\363n que aparece.}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Cuesti\363n 5:}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Cree un recopilador de datos definido por el usuario \(modo avanzado\) que incluya tanto el contador de rendimiento como los datos de seguimiento:}{section.5}% 11
+\BOOKMARK [1][-]{section.6}{Cuesti\363n 6:}{}% 12
+\BOOKMARK [2][-]{subsection.6.1}{Visite la web del proyecto y acceda a la demo que proporcionan \(http://demo.munin-monitoring.org/\) donde se muestra c\363mo monitorizan un servidor. Monitorice varios par\341metros y haga capturas de pantalla de lo que est\341 mostrando comentando qu\351 observa.}{section.6}% 13
+\BOOKMARK [1][-]{section.7}{Cuesti\363n opcional 4:}{}% 14
+\BOOKMARK [2][-]{subsection.7.1}{Pruebe a instalar este monitor en alguno de sus tres sistemas. Realice capturas de pantalla del proceso de instalaci\363n y comente capturas de pantalla del programa en ejecuci\363n.}{section.7}% 15
+\BOOKMARK [1][-]{section.8}{Cuesti\363n 7:}{}% 16
+\BOOKMARK [2][-]{subsection.8.1}{Escriba un breve resumen sobre alguno de los art\355culos donde se muestra el uso de strace o busque otro y com\351ntelo.}{section.8}% 17
+\BOOKMARK [1][-]{section.9}{Cuesti\363n 8:}{}% 18
+\BOOKMARK [2][-]{subsection.9.1}{Escriba un script en Python o PHP y analice su comportamiento usando el profiler presentado.}{section.9}% 19
+\BOOKMARK [1][-]{section.10}{Cuesti\363n 9:}{}% 20
+\BOOKMARK [2][-]{subsection.10.1}{Acceda a la consola mysql \(o a trav\351s de phpMyAdmin\) y muestre el resultado de mostrar el \216profile\216 de una consulta \(la creaci\363n de la BD y la consulta la puede hacer libremente\).}{section.10}% 21
+\BOOKMARK [1][-]{section.11}{Tareas extra:}{}% 22
+\BOOKMARK [2][-]{subsection.11.1}{Monitorizaci\363n del Hardware en Linux}{section.11}% 23
