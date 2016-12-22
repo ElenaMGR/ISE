@@ -160,6 +160,33 @@ Una vez finalizado el benchmark de ``GLmark2'', como se muestra en la figura \re
 
 \subsection{De los parámetros que le podemos pasar al comando ¿Qué significa -c 5? ¿y -n 100? Monitorice la ejecución de ab contra alguna máquina (cualquiera) ¿cuántas ``tareas'' crea ab en el cliente?}
 
+Tal y como se indica en el \texttt{man} de \texttt{ab} la opción \texttt{-c 5} indica que se podrán ejecutar concurrentemente 5 solicitudes y la opción \texttt{-n 100} significa que se harán 100 peticiones en el benchmarking actual. \\
+
+He monitorizado la ejecución de \texttt{ab} desde una máquina virtual con CentOS hacia otra con Windows Server, el resultado de la ejecución se muestra en las figuras \ref{fig:ejercicio2_1} y \ref{fig:ejercicio2_2}. El comando \texttt{ab} crea 1 tarea en el cliente como se muestra en la figura \ref{fig:ejercicio2_3}. En el servidor se puede ver un claro aumento del uso de la CPU durante la ejecución de \texttt{ab} (figura \ref{fig:ejercicio2_4}).
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio2_1.png} 	
+	\caption{CentOS, ab contra Windows Server.} \label{fig:ejercicio2_1}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio2_2.png} 	
+	\caption{CentOS, ab contra Windows Server.} \label{fig:ejercicio2_2}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio2_3.png} 	
+	\caption{CentOS, número de tareas de ab.} \label{fig:ejercicio2_3}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio2_4.png} 	
+	\caption{Windows, Adminitrador de tareas durante ejecución ab desde CentOS.} \label{fig:ejercicio2_4}
+\end{figure}
 
 
 %----------------------------------------------------------------------------------------
@@ -169,6 +196,73 @@ Una vez finalizado el benchmark de ``GLmark2'', como se muestra en la figura \re
 \section{Cuestión 3:}
 
 \subsection{Ejecute ab contra a las tres máquinas virtuales (desde el SO anfitrión a las máquina virtuales de la red local) una a una (arrancadas por separado).¿Cuál es la que proporciona mejores resultados? Muestre y coméntelos. (Use como máquina de referencia Ubuntu Server para la comparativa).}
+
+En primer lugar comentar que este ejercicio lo voy a realizar desde una máquina virtual CentOS en vez de utilizar el SO anfitrión ya que tengo un problema con los puertos, como ya dije en prácticas anteriores, y me es imposible realizar la redirección de puertos de VirtualBox.\\
+
+En primer lugar voy a ejecutar \texttt{ab} contra Windows, los resultados se muestran en las figuras \ref{fig:ejercicio3_1} y \ref{fig:ejercicio3_2}. Para hacerlo contra CentOS he tenido que desactivar el firewall como se muestra en la figura \ref{fig:ejercicio3_3} ya que por defecto el firewall bloquea todo el tráfico impidiendo ejecutar \texttt{ab}. Los resultados de \texttt{ab} contra CentOS se muestran en las figuras \ref{fig:ejercicio3_4} y \ref{fig:ejercicio3_5}. Por último he realizado el test \texttt{ab} contra Ubuntu Server como se muestra en las figuras \ref{fig:ejercicio3_6} y \ref{fig:ejercicio3_7}. Igualmente en Ubuntu he tenido que deshabilitar el firewall con el comando \texttt{sudo ufw disable}.\\
+
+Para una fácil comparación entre los resultados de \texttt{ab} contra las diferentes máquinas virtuales voy a mostrar los resultados en la tabla \ref{comparativa_ab}.
+
+\begin{table}[H]
+\centering
+\small
+\setlength\tabcolsep{2pt}
+\caption{Resultados de ab.}
+\label{comparativa_ab}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{SO}      & \textbf{Tamaño web} & \textbf{Tiempo (s)} & \textbf{Datos Transferidos} & \textbf{Respuestas/s} & \textbf{Ratio Transferencia} \\ \hline
+\textbf{CentOS}  & 4897 bytes          & 64.347              & 493.90 MB                   & 1554.08               & 7859.94 KB/s                      \\ \hline
+\textbf{Ubuntu}  & 11510 bytes         & 54.763              & 1123.71 MB                  & 1826.06               & 21012.13 KB/s                     \\ \hline
+\textbf{Windows} & 689 bytes           & 31.895              & 88.882 MB                   & 3135.33               & 2853.64 KB/s                    \\ \hline
+\end{tabular}
+\end{table}
+
+
+Como se puede observar mirando la columna correspondiente al ratio de transferencia, la máquina virtual que proporciona mejores resultados es Ubuntu, seguida de CentOS y por último Windows. Ubuntu tiene un ratio de transferencia 7.3632 veces mejor que Windows, y 2.67 veces mejor que CentOS.
+
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio3_1.png} 	
+	\caption{CentOS, resultado ab contra Windows.} \label{fig:ejercicio3_1}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio3_2.png} 	
+	\caption{CentOS, resultado ab contra Windows.} \label{fig:ejercicio3_2}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio3_3.png} 	
+	\caption{CentOS, desactivación del firewall.} \label{fig:ejercicio3_3}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio3_4.png} 	
+	\caption{CentOS, resultado ab contra CentOS.} \label{fig:ejercicio3_4}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio3_5.png} 	
+	\caption{CentOS, resultado ab contra CentOS.} \label{fig:ejercicio3_5}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio3_6.png} 	
+	\caption{CentOS, resultado ab contra Ubuntu Server.} \label{fig:ejercicio3_6}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio3_7.png} 	
+	\caption{CentOS, resultado ab contra Ubuntu Server.} \label{fig:ejercicio3_7}
+\end{figure}
 
 
 
