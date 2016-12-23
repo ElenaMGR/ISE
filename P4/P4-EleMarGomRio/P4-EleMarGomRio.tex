@@ -394,23 +394,56 @@ Como se puede observar en las gráficas el rendimiento en Ubuntu es 33.5/minuto,
 
 \textbf{Tenga en cuenta que puede comparar varios gestores de BD, lenguajes de programación web (tiempos de ejecución, gestión de memoria, ...), duración de la batería, servidor DNS, etc. . Alternativamente, puede descargar alguno de algún repositorio en github y modificarlo según sus necesidades.}\\
 
-Voy a utilizar como base un ejercicio que realizamos en la asignatura de Arquitectura de Computadores el cual calcula el tiempo de ejecutar n operaciones en coma flotante de forma secuencial.
+\subsubsection{Objetivo del benchmark.} 
+Voy a utilizar como base un ejercicio que realizamos en la asignatura de Arquitectura de Computadores el cual calcula el tiempo de ejecutar n operaciones en coma flotante de forma secuencial. El benchmark está escrito en C y realiza un número de operaciones de suma, multiplicación y división. El código del benchmark está incluido en el zip con nombre ``benchmark\_float.c''\\
+
+Por lo tanto el objetivo del benchmark es analizar el tiempo que tarda el procesador en realizar operaciones en coma flotante. Mostrará el tiempo de forma independiente de las sumas, multiplicaciones y divisiones.
 
 
+\subsubsection{Métricas (unidades, variables, puntuaciones, etc.).}
+Como ya hemos dicho anteriormente el benchmark realiza una medición del tiempo de ejecución, por cada una de las operaciones, la cual se muestra en segundos.
+
+\subsubsection{Instrucciones para su uso.}
+Para compilar el benchmark se usará la siguiente línea (lrt es una librería de tiempo real): 
+\texttt{sudo gcc benchmark\_float.c -o benchmark\_float –lrt}\\
+
+Para ejecutarlo se usa: \texttt{./benchmark\_float <longitud>}, siendo ``longitud'' un valor pasado como parámetro por el que dependerá el número de operaciones realizadas, siendo su valor máximo 1000, por lo que si se introduce un valor superior a éste se limita a 1000.
 
 
+\subsubsection{Ejemplo de uso analizando los resultados.}
+
+Los resultados de las ejecuciones del benchmark se pueden ver en las figuras: Ubuntu anfitrión \ref{fig:ejercicio5_1}, CentOS \ref{fig:ejercicio5_2} 
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio5_1.png} 	
+	\caption{Ubuntu anfitrión, resultados del benchmark.} \label{fig:ejercicio5_1}
+\end{figure}
+
+\begin{figure}[H] 
+	\centering
+	\includegraphics[width=14.7cm]{./img/ejercicio5_2.png} 	
+	\caption{CentOS, resultados del benchmark.} \label{fig:ejercicio5_2}
+\end{figure}
 
 
+Para poder comparar mejor los tiempos del benchmark extraigo los tiempos en la tabla \ref{comparativa_bench} que se muestra a continuación.
 
+\begin{table}[H]
+\centering
+\small
+\setlength\tabcolsep{2pt}
+\caption{Tiempos de la ejecución del benchmark.}
+\label{comparativa_bench}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{SO}      & \textbf{Suma (s)} & \textbf{Multiplicación (s)} & \textbf{División (s)}  \\ \hline
+\textbf{CentOS}  & 84.27          & 147.65             & 239.05 \\ \hline
+\textbf{Ubuntu}  & 31.27         & 55.22          & 91.47                  \\ \hline
+\end{tabular}
+\end{table}
 
-
-%----------------------------------------------------------------------------------------
-%  Extra
-%----------------------------------------------------------------------------------------
-
-%\section{Tareas extra:}
-
-
+Se puede observar claramente que el anfitrión con Ubuntu es mucho mejor que CentOS en este tipo de operaciones.
 
 
 %------------------------------------------------
